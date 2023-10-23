@@ -15,7 +15,7 @@ const NAV_ITEM = [
 
 export const Header = () => {
   return (
-    <header className="absolute top-0 w-full z-10 h-24">
+    <header className="absolute top-0 z-10 h-24 w-full flex items-center justify-center">
       <div className="container flex items-center justify-between">
         <Link href="/" className="">
           <Image
@@ -23,6 +23,7 @@ export const Header = () => {
             height={49}
             alt="Logo GB Dev"
             src="/images/logo.svg"
+           
           />
         </Link>
 
