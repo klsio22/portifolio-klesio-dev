@@ -1,5 +1,5 @@
-import { getRelativeTimeString } from "@/app/ultils/get-relative-time";
-import { ReactNode } from "react";
+import { getRelativeTimeString } from '@/app/ultils/get-relative-time';
+import { ReactNode } from 'react';
 
 type KnownTechsProps = {
   tech: {
@@ -9,13 +9,12 @@ type KnownTechsProps = {
   };
 };
 
-export const KnowTech = ({ tech }: KnownTechsProps) => {
-  const relativeTime = getRelativeTimeString(new Date(tech.startDate),'pr-BR')
+export const KnownTech = ({ tech }: KnownTechsProps) => {
+  const relativeTime = getRelativeTimeString(new Date(tech.startDate), 'pr-BR');
   return (
     <div>
       <div>
         <p>{tech.name}</p>
-
         {tech.icon}
       </div>
       <span>{relativeTime}</span>
