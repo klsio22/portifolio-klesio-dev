@@ -1,6 +1,6 @@
 import { TechBadge } from '@/app/components/tech-badge/index';
 import Image from 'next/image';
-import { Button } from '../../../button/index';
+import { Button } from '../../../components/button/index';
 import {
   ArrowRight,
   GithubLogo,
